@@ -4,13 +4,26 @@ import yaml
 with open('report_data.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
+    gameElements = {}
     for row in csv_reader:
-        if line_count == 0:
-            line_count += 1
-        elif line_count == 1:
+        if line_count != 0:
             yamlNotes = yaml.safe_load(row[3])
-            print(f'{yamlNotes}')
-            print(f'{yamlNotes["Inclusion"]}')
-            print(f'{yamlNotes["Exclusion"]}')
-            print(f'{yamlNotes["Research Question"]}')
-            line_count += 1
+            if type(yamlNotes) is dict:
+                if 'Research Question' in yamlNotes and yamlNotes['Research Question'] != None:
+                    elements = yamlNotes['Research Question'][0]['Elements']
+                    if type(elements) is list:
+                        for element in elements:
+                            if element in gameElements:
+                                gameElements[element] += 1
+                            else:
+                                gameElements[element] = 1
+        line_count += 1
+    gameKeys = list(gameElements.keys())
+    gameKeys.sort()
+    for gameElement in gameKeys:
+        print(gameElement)
+        # print(str(gameElement) +': ' + str(gameElements[gameElement]))
+
+gameElementsConvention = {
+    'Grammar Skill': []
+}
