@@ -1,4 +1,4 @@
-categories = {
+gameElementsConvention = {
     "Accessibility": [
         "Access",
         "Access instructional Material",
@@ -106,53 +106,230 @@ categories = {
         "Q&A",
         "Q&A in English"
     ],
-    "Hints": [],
-    "Hypermedia": [],
-    "Interactive Whiteboard": [],
-    "Introductory level": [],
-    "Kahoot!": [],
-    "Kinect": [],
-    "Leaderboard": [],
-    "Learner centered": [],
-    "Leveling": [],
-    "Listening acquisition": [],
-    "Location aware": [],
-    "Location-based Game": [],
-    "Match game": [],
-    "MCQ Game": [],
-    "Memory stimulation": [],
-    "Mingoville": [],
-    "Missions game": [],
-    "Native language interface": [],
-    "No clearly described": [],
-    "Non internet": [],
-    "Notifications": [],
-    "Observational Learning": [],
-    "Open World": [],
-    "Physical Iteration": [],
-    "Problem Solving Oriented": [],
-    "QuesTInSitu": [],
-    "Quizlet": [],
-    "Reading acquisition": [],
-    "Replayability": [],
-    "RETAIN model": [],
-    "Rewards": [],
-    "RPG Game": [],
-    "Social Networks Integration": [],
-    "Sound Guide": [],
-    "Speaking acquisition": [],
-    "Speech Recognition": [],
-    "Spelling Game": [],
-    "Storytelling game": [],
-    "Time-free": [],
-    "Time-limited": [],
-    "Usability": [],
-    "Use open content": [],
-    "User Profiling": [],
-    "Video Capture": [],
-    "Video Guide": [],
-    "Visual Guide": [],
-    "Vocabulary Acquisition": [],
-    "Web-oriented": [],
-    "WLAN": []
+    "Hints": [
+        "Hints",
+        "Hints to follow"
+    ],
+    "Hypermedia": ["Hypermedia"],
+    "Interactive Whiteboard": ["IWB (Interactive whiteboard)"],
+    "Introductory level": ["Introductory level"],
+    "Kahoot!": [
+        "Kahoot",
+        "Kahoot!"
+    ],
+    "Leaderboard": [
+        "Honor roll",
+        "Leader board",
+        "Leader boards",
+        "Leaderboards",
+        "Rank",
+        "Ranking",
+        "Rating",
+        "Score",
+        "Scores",
+        "Scoring"
+    ],
+    "Learner centered": ["Learner centered"],
+    "Leveling": [
+        "Difficulty levels",
+        "Level",
+        "Levels"
+    ],
+    "Listening acquisition": ["Listening"],
+    "Location aware": [
+        "Context aware",
+        "GPS",
+        "GPS coordinates",
+        "Location questions",
+        "Map exploration",
+        "Map route",
+        "Maps",
+        "Mobile",
+        "Mobility",
+        "Questions for place",
+        "Situated Learning",
+        "Ubiquitous"
+    ],
+    "Location-based Game": [
+        "Capture flag",
+        "Chase-and-Catch",
+        "Follow-the-Path",
+        "Search-and-Find",
+        "Treasure hunt",
+        "Treasury hunt"
+    ],
+    "Match game": [
+        "Market game",
+        "Match game",
+        "Matching",
+        "Matching, pairs, bubbles, stickers, colouring"
+    ],
+    "MCQ Game": [
+        "MCQ",
+        "MCQ (multiple choice)",
+        "MCQs",
+        "Multiple choice"
+    ],
+    "Memory stimulation": [
+        "Memory",
+        "Memory stimulation"
+    ],
+    "Mingoville": ["Mingoville"],
+    "Missions game": [
+        "Mission",
+        "Missions"
+    ],
+    "Native language interface": [
+        "Narrated native language"
+    ],
+    "Non internet": [
+        "Non internet"
+    ],
+    "Notifications": [
+        "Notifications"
+    ],
+    "Observational Learning": [
+        "Observational Learning"
+    ],
+    "Open World": [
+        "Free learning path",
+        "Freedom"
+    ],
+    "Physical Iteration": [
+        "Body motion",
+        "Kinect",
+        "Physical interaction",
+        "Physical response"
+    ],
+    "Problem Solving Oriented": [
+        "Case-based reasoning",
+        "Problem-based",
+        "Task-based"
+    ],
+    "QuesTInSitu": [
+        "QuesTInSitu"
+    ],
+    "Quizlet": [
+        "Quizlet"
+    ],
+    "Reading acquisition": [
+        "Reading"
+    ],
+    "Replayability": [
+        "Free replay",
+        "Replay"
+    ],
+    "Rewards": [
+        "Achievements",
+        "Badges",
+        "Bonus",
+        "Content unlocking",
+        "Digital badges",
+        "Points",
+        "Progress bar",
+        "Rewards",
+        "Rewards (expected/unexpected)"
+    ],
+    "RPG Game": [
+        "Boss fights",
+        "Interactions with NPC",
+        "Learning roles",
+        "MMORPG",
+        "RPG",
+        "Virtual agents"
+    ],
+    "Social Networks Integration": [
+        "Discussions on Facebook",
+        "Facebook",
+        "Social",
+        "Social Networks",
+        "Social graphs",
+        "Social media",
+        "Social network",
+        "social interaction"
+    ],
+    "Sound Guide": [
+        "Audio-Lingual Method",
+        "Narrative",
+        "Sound",
+        "Sound guidance",
+        "Sound help",
+        "Sounds"
+    ],
+    "Speaking acquisition": [
+        "Speaking"
+    ],
+    "Speech Recognition": [
+        "Auditory and visual input",
+        "Pronunciation",
+        "Sound recording",
+        "Speech recognition",
+        "Speech recognizer"
+    ],
+    "Spelling Game": [
+        "Build words with a set of given letters",
+        "Spelling",
+        "Spelling game",
+        "Typing game"
+    ],
+    "Storytelling game": [
+        "Follow instructions game",
+        "Story-based",
+        "Storyline",
+        "Storytelling"
+    ],
+    "Time-free": [
+        "Free time",
+        "Off-school access"
+    ],
+    "Time-limited": [
+        "Time limited",
+        "Timer"
+    ],
+    "Usability": [
+        "Friendly UI",
+        "Student and teacher client",
+        "Teacher interface",
+        "Teachers control",
+        "Teachers interface",
+        "Usability",
+        "User centered design"
+    ],
+    "Use open content": [
+        "Use open content"
+    ],
+    "User Profiling": [
+        "Avatar",
+        "Content addapted to user information",
+        "Database to save students interactions data",
+        "Learning analytics",
+        "Personal data",
+        "Roles"
+    ],
+    "Video Capture": [
+        "Video capture"
+    ],
+    "Visual Guide": [
+        "Colorful images",
+        "Dialogues",
+        "Picture select",
+        "Pictures",
+        "Video",
+        "Videos contents",
+        "Visual",
+        "Visual help",
+        "Visual support"
+    ],
+    "Vocabulary Acquisition": [
+        "Vocabulary",
+        "Vocabulary acquisition",
+        "mnemonics for vocabulary",
+        "vocabulary, sentences and listening"
+    ],
+    "Web-oriented": [
+        "Web based"
+    ],
+    "WLAN": [
+        "WLAN"
+    ]
 }
