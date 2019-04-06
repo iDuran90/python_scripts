@@ -1,6 +1,6 @@
 import csv
 import yaml
-from elements_categories import gameElementsConvention, validationElementsConvention, resultsElementsConvention
+from elements_categories import gameElementsConvention
 from categories import categoriesConvention
 
 def loadArticles():
@@ -22,37 +22,35 @@ def loadArticles():
 
     return articles
 
-def homogenizeArticlesElements(articles, key, conventions):
-  conventionKeys = conventions.keys()
+def homogenizeArticlesElements(articles):
+  gameElementsConventionKeys = gameElementsConvention.keys()
   articlesHomogenized = []
   for article in articles:
     articleHomogenized = {
-      key: []
+      "elements": []
     }
-    if type(article[key]) is list:
-      for element in article[key]:
-        if type(element) is dict:
-          element = list(element.keys())[0]
-        if element in conventionKeys:
-          articleHomogenized[key].append(element)
+    if type(article["elements"]) is list:
+      for element in article["elements"]:
+        if element in gameElementsConventionKeys:
+          articleHomogenized["elements"].append(element)
         else:
-          for elementKey in conventionKeys:
-            if element in conventions[elementKey]:
-              articleHomogenized[key].append(elementKey)
+          for elementKey in gameElementsConventionKeys:
+            if element in gameElementsConvention[elementKey]:
+              articleHomogenized["elements"].append(elementKey)
     articlesHomogenized.append(articleHomogenized)
 
   return articlesHomogenized
 
-def getElementsUniqueFrequency(articles, key):
-  count = {}
+def getElementsUniqueFrequency(articles):
+  gameElements = {}
   for article in articles:
-    for element in article[key]:
-      if element in count:
-        count[element] += 1
+    for element in article["elements"]:
+      if element in gameElements:
+        gameElements[element] += 1
       else:
-        count[element] = 1
+        gameElements[element] = 1
 
-  return sorted(count.items(), key=lambda kv: kv[1], reverse=True)
+  return (gameElements)
 
 def getElementsCountWithCategories(elements):
   elementsCategorized = []
@@ -128,41 +126,15 @@ def getElementsCombinedFrequency(articles):
 
   return (combinations)
 
-def getArticlesKeysByAttr(articles, attr):
-  validationMethods = {}
-  for article in articles:
-    if type(article[attr]) is list:
-      for element in article[attr]:
-        if type(element) is dict:
-          element = list(element.keys())[0]
-        if element != False:
-          if element in validationMethods:
-            validationMethods[element] += 1
-          else:
-            validationMethods[element] = 1
-
-  return sorted(validationMethods.items(), key=lambda kv: kv[1], reverse=True)
-
 articles = loadArticles()
+articles = homogenizeArticlesElements(articles)
+elementsCount = getElementsUniqueFrequency(articles)
+# getElementsCountWithCategories(elementsCount)
+articles = getArticlesWithElementsRecombinated(articles, 'Gaming')
 
-# Lines for elements
-# articles = homogenizeArticlesElements(articles)
-# elementsCount = getElementsUniqueFrequency(articles)
-# # getElementsCountWithCategories(elementsCount)
-# articles = getArticlesWithElementsRecombinated(articles, 'Gaming')
+combinationsCounted = getElementsCombinedFrequency(articles)
+combinationsCountedAndSorted = sorted(combinationsCounted.items(), key=lambda kv: kv[1], reverse=True)
+for key, value in combinationsCountedAndSorted:
+  print(key + '\t' + str(value))
 
-# combinationsCounted = getElementsCombinedFrequency(articles)
-# combinationsCountedAndSorted = sorted(combinationsCounted.items(), key=lambda kv: kv[1], reverse=True)
-# for key, value in combinationsCountedAndSorted:
-#   print(key + '\t' + str(value))
-
-# For validation methods
-# for key, value in getArticlesKeysByAttr(articles, "validation"):
-#   print(key + '\t' + str(value))
-articles = homogenizeArticlesElements(articles, "results", resultsElementsConvention)
-for key, value in getElementsUniqueFrequency(articles, "results"):
-   print(key + '\t' + str(value))
-
-# For results methods
-# for key, value in getArticlesKeysByAttr(articles, "results"):
-#   print(key + '\t' + str(value))
+# getElementsCombinedFrequencyByCategory()

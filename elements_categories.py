@@ -238,6 +238,9 @@ gameElementsConvention = {
         "RPG",
         "Virtual agents"
     ],
+    "Self-learning": [
+        "Self-learning"
+    ],
     "Social Networks Integration": [
         "Discussions on Facebook",
         "Facebook",
@@ -332,4 +335,153 @@ gameElementsConvention = {
     "WLAN": [
         "WLAN"
     ]
+}
+
+validationElementsConvention = {
+    "ARCS": [],
+    "Control/Experimental group": [
+        "Control/Experimental group",
+        "Experimental/Control group",
+        "Experiment/Control group",
+        "Control/experimental group",
+        "Experiment/Control groups",
+        "3 groups, one playing the game",
+        "Traditional lessons vs Gamified lessons",
+        "Experimental/control group",
+        "Experimental groups"
+    ],
+    "Experimental group": [
+        "Experiment group"
+    ],
+    "Interviews": [
+        "Interviews",
+        "Interview"
+    ],
+    "Observation": [
+        "Observation",
+        "Children in-class observation",
+        "Observations"
+    ],
+    "Post test": [
+        "Post test",
+        "Summative assessment",
+        "post tests"
+    ],
+    "Pre/Post tests": [
+        "Pre/post tests",
+        "Pre/Post tests",
+        "Pre/Post test",
+        "Pre/post test"
+    ],
+    "Survey": [
+        "Questionnaire",
+        "Surveys",
+        "English learning motivation questionnaire",
+        "Preschool teachers’ questionnaire",
+        "Questionnaire teachers and students",
+        "Usability tests",
+        "Survey Teachers/Students",
+        "Survey (students/parents)"
+    ]
+}
+
+resultsElementsConvention = {
+    "4-members group perform better": [],
+    "Anxiety reduced": [],
+    "cognitivism, integration learning among different subjects and task-based learning": [],
+    "Collaboration needs to be designed": [],
+    "digital nativeness increase scores": [],
+    "discrepancies when subtracting scores": [],
+    "Engagement improved": [
+        "Engagement",
+        "Enhanced achievement",
+        "Lead the learners into better immersion and interactions",
+        "Participating and engaging in English learning",
+        "most of the students enjoyed the proposed approach",
+        "Instead of consulting hints, students prefer to find by themselves the solutions",
+        "high interest",
+        "Higher willingness",
+        "Engagement increase",
+        "Social interaction improve",
+        "Engagement improve",
+        "Autonomy developed",
+        "Students using device more engagement",
+        "constructivism, utilizing serious games lead students to interact with others",
+        "Game interesting and useful",
+        "Willing to speak in class",
+        "Participation increase",
+        "Interest increase",
+        "Students willingness",
+        "engagement",
+        "students more active",
+        "Students willing increase",
+        "Faster learning",
+        "Communication increase"
+    ],
+    "English anxiety did not significantly changed": [],
+    "gender played a significant role": [],
+    "Girls outperformed with simple game": [],
+    "High-level students outperform low-level": [],
+    "Interactivity plays an important role in serious games": [],
+    "Learning outcomes improved": [
+        "Learning outcomes increase",
+        "Scores improve",
+        "Higher scores",
+        "Verbal knowledge increase",
+        "Skills increase",
+        "Knowledge increase",
+        "Scores increased",
+        "English proficiency improved",
+        "It was inferable that the flipped contextual game-based learning approach outperformed the conventional game-based learning approach regarding facilitating undergraduate students’ business writing.",
+        "Understanding enhanced",
+        "Significant effect",
+        "Achieve higher effectiveness",
+        "positive effectiveness",
+        "experimental group got a substantially higher average",
+        "Performance improved",
+        "Better results with clear educational goals",
+        "Higher knowledge with simple game",
+        "Improve pronunciation",
+        "Learning increase",
+        "Improve vocabulary acquisition",
+        "behaviorism, to have interesting learning process to help learn basic contents",
+        "learning benefits were uneven among participants",
+        "Learning improve",
+        "Knowledge aquisition",
+        "Improve skills",
+        "Scores increasing",
+        "Knowledge improve",
+        "English use increase",
+        "Players of MMORPG have better scores",
+        "learning outcomes increase"
+    ],
+    "More time more learning": [],
+    "Motivation improved": [
+        "Motivation improve",
+        "Students motivation increase",
+        "Motivation",
+        "It seems that more students learning with the flipped classroom gave positive feedback regarding satisfaction and motivation, while at the same time having more negative flow than those learning with the conventional approach.",
+        "Intense and focused learning atmosphere",
+        "Stronger motivation",
+        "Improvement enjoyable",
+        "motivation and achievement increased",
+        "“fun,”“interactive,” and “motivating,”",
+        "serious game is able to motivate EFL",
+        "increase motivation",
+        "Higher motivation",
+        "Higher motivation with complex game",
+        "motivation increase",
+        "Improve motivation",
+        "improve motivation",
+        "Motivation improved"
+    ],
+    "Not improvement knowledge": [],
+    "Physical movement useful": [],
+    "Security concerns": [
+        "Securoty concerns"
+    ],
+    "Similar prior knowledge": [],
+    "short experimental period": [],
+    "user firendly": [],
+    "Students prefer games": []
 }
